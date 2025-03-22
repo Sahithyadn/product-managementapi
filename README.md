@@ -1,28 +1,45 @@
-## Spring Boot
-This is a simple Spring Boot project. This application serves as a basic template for a Spring Boot based application.
-This project is bootstrapped with [Spring Initializr](https://start.spring.io/).
+ Product API - Spring Boot with MongoDB
+This is a Spring Boot REST API for managing products using MongoDB as the database.
 
-## How to run
+🔗 Live API: Product API
+🎥 Demo Video: Watch Here
+🌐 GitHub Repository: Product API GitHub
 
-1. Run the application by running the following command in the terminal:
-   ```sh
-   mvn spring-boot:run
-   ```   
+📌 Features
+🗄️ Uses MongoDB as the database
+🌐 RESTful API for CRUD operations on products
+🔥 Built with Spring Boot
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/yashdongre12/product.git
+cd product
+2️⃣ Configure MongoDB in application.properties
+Update your MongoDB credentials in src/main/resources/application.properties:
 
-2. Refresh the URL in a simple browser to see the output. You can also click the run button above the Main program to run the application instead the above command.
+spring.data.mongodb.host=bytexldb.com
+spring.data.mongodb.port=5050
+spring.data.mongodb.database=db_43asngdub
+spring.data.mongodb.username=user_43asngdub
+spring.data.mongodb.password=p43asngdub
+spring.data.mongodb.authentication-database=admin
+3️⃣ Run the Application
+mvn spring-boot:run
+🛠️ API Endpoints
+Method	Endpoint	Description
+GET	/api/products	Get all products
+GET	/api/products/{id}	Get product by ID
+POST	/api/products	Add a new product
+PUT	/api/products/{id}	Update a product by ID
+DELETE	/api/products/{id}	Delete a product by ID
+📜 Product Model
+{
+  "id": "string",
+  "name": "string",
+  "price": "number"
+}
+💡 Contributing
+Feel free to contribute by submitting issues or pull requests.
 
-
-![](https://static.onecompiler.com/images/posts/3zzkbysj7/run-spring-boot.png)
-
-> If you do not see the Run button, Please wait for a minute for the project to load and open as a Java Project.
-
-<!-- 1. Before running the application, make sure all dependencies are installed. To install dependencies, run following command in terminal:
-   ```sh
-   ./gradlew build -x test
-   ```
-
-2. To run the application, run following command in terminal:
-   ```sh
-   ./gradlew bootRun
-   ```   
-3. Refresh the URL in simple browser to see the output.    -->
+image 
+![image](https://github.com/user-attachments/assets/9906f905-9ba4-4083-a797-b94ead75cda7)
+![image](https://github.com/user-attachments/assets/843c941f-7dee-444a-8a8c-5393866fe2e2)
